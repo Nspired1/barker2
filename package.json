@@ -6,6 +6,9 @@
   "scripts": {
     "server:debug": "nodemon server.js",
     "start": "node server.js",
+    "frontend-install": "npm install --prefix frontend",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm node server\" \"npm run frontend\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
